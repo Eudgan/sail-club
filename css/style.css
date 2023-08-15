@@ -129,6 +129,13 @@ main {
     text-underline-position: under;
 }
 
+.news {
+    width: 770px;
+    margin: 0 auto;
+    padding: 0;
+    margin-bottom: 120px;
+}
+
 .news h2 {
     font-size: 24px;
     font-weight: 700;
@@ -139,6 +146,13 @@ main {
     text-underline-offset: 15px;
     text-decoration-thickness: 2px;
     text-underline-position: under;
+}
+
+.news figure {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 33px;
 }
 
 .news p {
@@ -189,6 +203,21 @@ main {
     line-height: 19px;
 }
 
+.contacts {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.contact-text {
+    width: 400px;
+}
+
+.contacts img {
+    width: 670px;
+}
+
 .contacts h2 {
     font-size: 24px;
     font-weight: 700;
@@ -215,6 +244,22 @@ main {
     text-decoration: none;
 }
 
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    margin: 0 auto;
+    padding: 0;
+    width: 1170px;
+}
+
+.company-info {
+    width: 175px;
+    margin-right: 125px;
+}
+
 .politics {
     text-decoration: none;
 }
@@ -232,6 +277,7 @@ main {
 
 .footer-navigation {
     list-style-type: none;
+    width: 870px;
 }
 
 .add-navigation {
@@ -250,48 +296,4 @@ main {
     font-size: 14px;
     line-height: 16px;
     text-decoration: none;
-}
-
-
-
-
-
-.news {
-    width: 770px;
-    margin: 0 auto;
-    padding: 0;
-    margin-bottom: 120px;
-}
-
-.news h2 {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 55px;
-}
-
-.news figure {
-    margin: 0;
-    padding: 0;
-    display: block;
-    margin-bottom: 33px;
-}
-
-.article-header {
-    margin: 0;
-    padding: 0;
-    margin-bottom: 27px;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-.contact-text {
-    width: 400px;
-}
-
-.contacts img {
-    width: 670px;
 }
