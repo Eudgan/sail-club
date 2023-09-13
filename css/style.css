@@ -17,6 +17,7 @@ body {
 
 .main-header-nav {
     display: flex;
+    align-items: center;
 }
 
 .main-header-nav .logo {
@@ -28,11 +29,27 @@ body {
     width: 559px;
     padding: 0;
     margin: 0;
+    display: flex;
+    gap: 30px;
 }
 
 .login {
     width: 36px;
+    height: 36px;
     margin-left: auto;
+    border: 1px solid #00C6BD;
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login:hover {
+    opacity: 0.5;
+}
+
+.login:active {
+    opacity: 0.3;
 }
 
 .navigation-item {
@@ -44,6 +61,14 @@ body {
     line-height: 18px;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.navigation-item a:hover {
+    color: rgba(22, 49, 82, 0.5);
+}
+
+.navigation-item a:active {
+    color: rgba(22, 49, 82, 0.3);
 }
 
 main {
@@ -150,6 +175,7 @@ main {
 }
 
 .main-gallery-photo {
+    display: block;
     width: 970px;
     margin-right: 30px;
 }
@@ -164,8 +190,32 @@ main {
     margin-bottom: 30px;
 }
 
+.gallery-item a {
+    display: block;
+    position: relative;
+}
+
+.gallery-item a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(253, 253, 255, 0.50); /* Здесь можно изменить цвет и степень затемнения */
+    z-index: 1;
+}
+
+.gallery-item a.active-item::before {
+    background-color: transparent;
+}
+
 .gallery-item:last-child {
     margin-bottom: 0;
+}
+
+.gallery-item img {
+    display: block;
 }
 
 .gallery-header {
@@ -213,6 +263,9 @@ main {
 .news p {
     font-size: 18px;
     line-height: 26px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
 }
 
 .news .info-for-news-photo {
@@ -236,53 +289,98 @@ main {
 .news .list-header {
     margin: 0;
     padding: 0;
+    margin-top: 24px;
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: 700;
     line-height: 26px;
 }
 
+.teams-list {
+    margin: 0;
+    padding: 0;
+
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
 .team-item {
     font-size: 18px;
     line-height: 26px;
+
+    margin-bottom: 8px;
 }
+
+.team-item:last-child {
+    margin-bottom: 0;
+} 
 
 .news blockquote {
     font-size: 26px;
     font-weight: 700;
     line-height: 36px;
+    margin: 0;
+    padding: 0;
+    margin-top: 38px;
+    margin-bottom: 30px;
+    border-left: solid 2px #00C6BD;
+    padding-left: 20px;
 }
 
-.news .author-name {
+.aricle-footer {
+    margin-top: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aricle-footer .author {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.aricle-footer .author-name {
     font-weight: 700;
     line-height: 19px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 9px;
 }
 
-.news time {
+.aricle-footer time {
     color: #8693A4;
     font-weight: 400;
     line-height: 19px;
 }
 
+.aricle-footer .share-icon:hover {
+    opacity: 0.5;
+}
+
+.aricle-footer .share-icon:active {
+    opacity: 0.3;
+}
+
 .contacts {
-    margin: 0 auto;
-    padding: 0;
+    width: 1170px;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 100px;
+}
+
+map {
+    width: 670px;
+    display: block;
 }
 
 .contact-text {
     width: 400px;
 }
 
-.contacts a {
-    width: 670px;
-    margin: 0;
-    padding: 0;
-}
-
-.contacts h2 {
+.contact-text h2 {
     font-size: 24px;
     font-weight: 700;
     line-height: 34px;
@@ -296,16 +394,29 @@ main {
     text-underline-position: under;
 }
 
+.contacts-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-item-flex {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
 .contacts-item h3 {
     margin: 0;
     padding: 0;
-    margin-bottom: 15px;
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
 }
 
 .contacts-item p {
+    margin: 0;
+    padding: 0;
     line-height: 22px;
     color: #163152;
 }
@@ -314,7 +425,27 @@ main {
     text-decoration: none;
 }
 
+.social-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-item a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #00C6BD;
+    border-radius: 50%;
+}
+
 .main-footer {
+    border-top: solid 1px #1631521A;
     padding-top: 60px;
     padding-bottom: 60px;
     margin-top: 120px;

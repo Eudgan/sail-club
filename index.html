@@ -64,10 +64,10 @@
             <div class="gallery-wrapper">
             <img class="main-gallery-photo" src="img/gallery photo 1.jpg" alt="яхта на фоне горы" width="970" height="690">
             <ul>
-                <li class="gallery-item"><img src="img/gallery photo 2.jpg" alt="передня часть сторого катера" width="170" height="150"></li>
-                <li class="gallery-item"><img src="img/gallery photo 3.jpg" alt="нос корабля" width="170" height="150"></li>
-                <li class="gallery-item"><img src="img/gallery photo 4.jpg" alt="двое мужчин на парусной яхте" width="170" height="150"></li>
-                <li class="gallery-item"><img src="img/gallery photo 5.jpg" alt="яхта на фоне горы" width="170" height="150"></li>
+                <li class="gallery-item"><a href="#"><img src="img/gallery photo 2.jpg" alt="передня часть сторого катера" width="170" height="150"></a></li>
+                <li class="gallery-item"><a href="#"><img src="img/gallery photo 3.jpg" alt="нос корабля" width="170" height="150"></a></li>
+                <li class="gallery-item"><a href="#"><img src="img/gallery photo 4.jpg" alt="двое мужчин на парусной яхте" width="170" height="150"></a></li>
+                <li class="gallery-item"><a class="active-item" href="#"><img src="img/gallery photo 5.jpg" alt="яхта на фоне горы" width="170" height="150"></a></li>
             </ul>
             </div>
         </section>
@@ -96,9 +96,13 @@
                 <blockquote>Мы в команде очень дружны и понимаем друг друга без слов, думаю, поэтому мы и победили</blockquote>
                 <p>Поздравляем победителей и ждем все участников снова на осенних регатах!</p>
                 <footer class="aricle-footer">
-                    <img class="author" src="img/author_photo.jpg" alt="фото Артема Колесникова" width="60" height="60">
-                    <p class="author-name">Артем Колесников <time datetime="2021-06-20">20.06.2021</time></p>
+                    <div class="author">
+                    <img src="img/author_photo.jpg" alt="фото Артема Колесникова" width="60" height="60">
+                    <div>
+                    <p class="author-name">Артем Колесников</p>
                     <time datetime="2021-06-20">20.06.2021</time>
+                    </div>
+                    </div>
                     <a href="#"><img class="share-icon" src="img/share_icon.svg" alt="иконка поделиться" width="26" height="22"></a>
                 </footer> 
             </article>
@@ -108,9 +112,9 @@
             <div class="contact-text">
                 <h2>Контакты</h2>
                 <ul class="contacts-list">
-                    <li class="contacts-item"><h3>Адрес:</h3><p>г. Сочи, ул. Бзугу, 9</p></li>
-                    <li class="contacts-item"><h3>Телефон:</h3> <a class="phone" href="tel:+7622620563"><p>8 (622) 62-05-63</p></a></li>
-                    <li class="contacts-item"><h3>E-mail:</h3> <a class="email" href="mailto:yachtclub-sochi@mail.ru"><p>yachtclub-sochi@mail.ru</p></a></li>
+                    <li class="contacts-item contacts-item-flex"><h3>Адрес:</h3><p>г. Сочи, ул. Бзугу, 9</p></li>
+                    <li class="contacts-item contacts-item-flex"><h3>Телефон:</h3><a class="phone" href="tel:+7622620563"><p>8 (622) 62-05-63</p></a></li>
+                    <li class="contacts-item contacts-item-flex"><h3>E-mail:</h3><a class="email" href="mailto:yachtclub-sochi@mail.ru"><p>yachtclub-sochi@mail.ru</p></a></li>
                     <li class="contacts-item"><h3>Мы в социальных сетях:</h3>
                         <ul class="social-list">
                             <li class="social-item"><a href="#"><img src="img/facebook.svg" alt="facebook" width="9" height="16"></a></li>
@@ -120,7 +124,7 @@
                     </li>
                 </ul>
             </div>
-            <img src="img/map.png" alt="карта местонахождения клуба" width="670" height="351">
+            <img class="map" src="img/map.png" alt="карта местонахождения клуба" width="670" height="351">
         </section>
     </main>
     <footer class="main-footer">
