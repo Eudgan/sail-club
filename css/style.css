@@ -198,7 +198,7 @@ main {
     margin: 0;
     padding: 0;
     list-style-type: disc;
-    padding-left: 42px;
+    padding-left: 45px;
     margin-bottom: 29px;
 }
 
@@ -206,8 +206,6 @@ main {
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 4px;
-    list-style-image: url(/img/marker.svg);
-    padding-left: 10px;
 }
 
 .price {
